@@ -56,8 +56,8 @@ nav button:hover {
 }
 
 .app-card img {
-  width: 80px;
-  height: 80px;
+  width: 15px;
+  height: 15px;
   object-fit: cover;
 }
 
