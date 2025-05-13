@@ -1,54 +1,53 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ilovalar Katalogi</title>
+  <title>Recommended Apps</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="tabs">
-      <button class="tab-button" id="android-tab" onclick="showAndroid()">Android Ilovalar</button>
-      <button class="tab-button" id="ios-tab" onclick="showIos()">iOS Ilovalar</button>
-    </div>
-    
-    <div id="android" class="tab-content active">
-      <h2>Android Ilovalar</h2>
-      <div class="app-list">
-        <div class="app-item">
-          <img src="android-app1.png" alt="Android App 1">
-          <p>Ilova 1</p>
-        </div>
-        <div class="app-item">
-          <img src="android-app2.png" alt="Android App 2">
-          <p>Ilova 2</p>
-        </div>
-        <div class="app-item">
-          <img src="android-app3.png" alt="Android App 3">
-          <p>Ilova 3</p>
-        </div>
+  <header>
+    <h1>Recommended for You</h1>
+    <nav>
+      <button onclick="showSection('android')">Android</button>
+      <button onclick="showSection('ios')">iOS</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="android" class="app-section">
+      <!-- Android Apps -->
+      <div class="app-card">
+        <img src="img/taobao_icon.png" alt="Taobao">
+        <p>Taobao: Онлайн и достав... (4.1★)</p>
       </div>
-    </div>
-    
-    <div id="ios" class="tab-content">
-      <h2>iOS Ilovalar</h2>
-      <div class="app-list">
-        <div class="app-item">
-          <img src="ios-app1.png" alt="iOS App 1">
-          <p>Ilova 1</p>
-        </div>
-        <div class="app-item">
-          <img src="ios-app2.png" alt="iOS App 2">
-          <p>Ilova 2</p>
-        </div>
-        <div class="app-item">
-          <img src="ios-app3.png" alt="iOS App 3">
-          <p>Ilova 3</p>
-        </div>
+      <div class="app-card">
+        <img src="img/tonkeeper_icon.png" alt="Tonkeeper">
+        <p>Tonkeeper — Crypto TON W (4.5★)</p>
       </div>
-    </div>
-  </div>
+      <div class="app-card">
+        <img src="img/tradingview_icon.png" alt="TradingView">
+        <p>TradingView: Track All Markets (4.9★)</p>
+      </div>
+    </section>
+
+    <section id="ios" class="app-section hidden">
+      <!-- iOS Apps -->
+      <div class="app-card">
+        <img src="img/lightroom_icon.png" alt="Lightroom">
+        <p>Lightroom Photo & Video (4.7★)</p>
+      </div>
+      <div class="app-card">
+        <img src="img/sololearn_icon.png" alt="SoloLearn">
+        <p>Sololearn: Learn to code (4.8★)</p>
+      </div>
+      <div class="app-card">
+        <img src="img/metatrader_icon.png" alt="MetaTrader">
+        <p>MetaTrader 4 Forex Trading (4.8★)</p>
+      </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
