@@ -1,13 +1,9 @@
-function showAndroid() {
-  document.getElementById('android').classList.add('active');
-  document.getElementById('ios').classList.remove('active');
-  document.getElementById('android-tab').classList.add('active');
-  document.getElementById('ios-tab').classList.remove('active');
-}
+function showSection(sectionId) {
+  // Barcha bo‘limlarni yashiradi
+  document.querySelectorAll('.app-section').forEach(section => {
+    section.classList.add('hidden');
+  });
 
-function showIos() {
-  document.getElementById('ios').classList.add('active');
-  document.getElementById('android').classList.remove('active');
-  document.getElementById('ios-tab').classList.add('active');
-  document.getElementById('android-tab').classList.remove('active');
+  // Tanlangan bo‘limni ko‘rsatadi
+  document.getElementById(sectionId).classList.remove('hidden');
 }
