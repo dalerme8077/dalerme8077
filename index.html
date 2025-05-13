@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilovalar Katalogi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Foydali Ilovalar Katalogi</h1>
+    </header>
+
+    <nav>
+        <button id="androidBtn" class="active">📱 Android</button>
+        <button id="iosBtn">🍏 iOS</button>
+    </nav>
+
+    <main>
+        <!-- Android Ilovalari -->
+        <div id="androidApps">
+            <section class="app-category">
+                <h2>📚 Ta'lim</h2>
+                <ul>
+                    <li>Duolingo</li>
+                    <li>Khan Academy</li>
+                    <li>Coursera</li>
+                </ul>
+            </section>
+
+            <section class="app-category">
+                <h2>🗂 Produktivlik</h2>
+                <ul>
+                    <li>Google Keep</li>
+                    <li>Evernote</li>
+                    <li>Microsoft To Do</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- iOS Ilovalari -->
+        <div id="iosApps" class="hidden">
+            <section class="app-category">
+                <h2>📚 Ta'lim</h2>
+                <ul>
+                    <li>Apple Books</li>
+                    <li>Udemy</li>
+                    <li>Quizlet</li>
+                </ul>
+            </section>
+
+            <section class="app-category">
+                <h2>🗂 Produktivlik</h2>
+                <ul>
+                    <li>Notion</li>
+                    <li>Things 3</li>
+                    <li>Fantastical</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
