@@ -1,79 +1,55 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilovalar Katalogi</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilovalar Katalogi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Foydali Ilovalar Katalogi</h1>
-    </header>
-
-    <nav>
-        <button id="androidBtn" class="active">📱 Android</button>
-        <button id="iosBtn">🍏 iOS</button>
-    </nav>
-
-    <main>
-        <!-- Android Ilovalari -->
-        <div id="androidApps" class="app-grid">
-            <div class="app-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Duolingo_logo.png" alt="Duolingo">
-                <h3>Duolingo</h3>
-            </div>
-            <div class="app-card">
-                <img src="https://cdn.kastatic.org/images/khan-logo-dark-background.new.png" alt="Khan Academy">
-                <h3>Khan Academy</h3>
-            </div>
-            <div class="app-card">
-                <img src="https://about.coursera.org/static/logo.png" alt="Coursera">
-                <h3>Coursera</h3>
-            </div>
-            <div class="app-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Google_Keep_icon_%282020%29.svg" alt="Google Keep">
-                <h3>Google Keep</h3>
-            </div>
-            <div class="app-card">
-                <img src="https://evernote.com/c/assets/hub/icons/evernote-icon.svg" alt="Evernote">
-                <h3>Evernote</h3>
-            </div>
-            <div class="app-card">
-                <img src="https://1000logos.net/wp-content/uploads/2020/08/Microsoft-To-Do-Logo.png" alt="Microsoft To Do">
-                <h3>Microsoft To Do</h3>
-            </div>
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-button" id="android-tab" onclick="showAndroid()">Android Ilovalar</button>
+      <button class="tab-button" id="ios-tab" onclick="showIos()">iOS Ilovalar</button>
+    </div>
+    
+    <div id="android" class="tab-content active">
+      <h2>Android Ilovalar</h2>
+      <div class="app-list">
+        <div class="app-item">
+          <img src="android-app1.png" alt="Android App 1">
+          <p>Ilova 1</p>
         </div>
-
-        <!-- iOS Ilovalari -->
-        <div id="iosApps" class="app-grid hidden">
-            <div class="app-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Apple_Books_icon.svg/2048px-Apple_Books_icon.svg.png" alt="Apple Books">
-                <h3>Apple Books</h3>
-            </div>
-            <div class="app-card">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/udemy-3521586-2944960.png" alt="Udemy">
-                <h3>Udemy</h3>
-            </div>
-            <div class="app-card">
-                <img src="https://assets.quizlet.com/a/j/dist/app/i/logo.svg" alt="Quizlet">
-                <h3>Quizlet</h3>
-            </div>
-            <div class="app-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Notion_app_logo.png" alt="Notion">
-                <h3>Notion</h3>
-            </div>
-            <div class="app-card">
-                <img src="https://images.squarespace-cdn.com/content/v1/55e1af9de4b0fd9b4c8d403f/1622453100430-YKETP7QTK1UFRW4M5Y9M/Things+3+Icon.png" alt="Things 3">
-                <h3>Things 3</h3>
-            </div>
-            <div class="app-card">
-                <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/6c/6e/63/6c6e63be-6cf0-c1b9-0be4-1b1bc51926d5/AppIcon-0-1x_U007emarketing-0-0-85-220.png/246x0w.png" alt="Fantastical">
-                <h3>Fantastical</h3>
-            </div>
+        <div class="app-item">
+          <img src="android-app2.png" alt="Android App 2">
+          <p>Ilova 2</p>
         </div>
-    </main>
+        <div class="app-item">
+          <img src="android-app3.png" alt="Android App 3">
+          <p>Ilova 3</p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="ios" class="tab-content">
+      <h2>iOS Ilovalar</h2>
+      <div class="app-list">
+        <div class="app-item">
+          <img src="ios-app1.png" alt="iOS App 1">
+          <p>Ilova 1</p>
+        </div>
+        <div class="app-item">
+          <img src="ios-app2.png" alt="iOS App 2">
+          <p>Ilova 2</p>
+        </div>
+        <div class="app-item">
+          <img src="ios-app3.png" alt="iOS App 3">
+          <p>Ilova 3</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
